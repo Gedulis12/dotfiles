@@ -11,10 +11,6 @@ vim.keymap.set("n", "Q", "!!$SHELL<CR>")
 -- alt+v in command mode to paste current line in
 vim.keymap.set("n", "<Esc>v", "<C->esubstitute(getline('.'), '^s*(' . escape(substitute(&commentstring, '%s.*$', '', ''), '*') . ')*s*:*' , '', '')<CR>")
 
--- <F4> to toggle highlight.
--- let hlstate=0
-
-vim.keymap.set("n", "F4", ":if (hlstate%2 == 0) | nohlsearch | else | set hlsearch | endif | let hlstate=hlstate+1<cr>")
 
 -- move highlighted lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

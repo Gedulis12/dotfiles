@@ -22,8 +22,3 @@ vim.opt.termguicolors = true
 
 --" alt+v in command mode to paste current line in
 --cnoremap <Esc>v <C-\>esubstitute(getline('.'), '^\s*\(' . escape(substitute(&commentstring, '%s.*$', '', ''), '*') . '\)*\s*:*' , '', '')<CR>
-
---" ctrl+c to toggle highlight.
---let hlstate=0
-
---nnoremap <F4> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<cr>
