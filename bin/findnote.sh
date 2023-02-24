@@ -31,7 +31,7 @@ get_tag () {
     tag=$( \
         grep -aHri 'tags: \[' $NOTES_DIR/* | \
         cut -d ":" -f 3 | \
-        sed -e 's/[][,]//g' | \
+        sed -e "s/[]'[,]//g" | \
         tr ' ' '\n' | \
         grep "\S" | \
         sort -u | \
