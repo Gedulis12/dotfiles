@@ -4,6 +4,8 @@ PATH="/home/gedas/.local/bin:$PATH"
 PATH="/home/gedas/bin:$PATH"
 PATH="/home/gedas/code/flutter/flutter/bin:$PATH"
 PATH="/home/gedas/downloads/androidstudio/android-studio/bin:$PATH"
+PATH="/home/gedas/Documents/bugbounty/tools/bin:$PATH"
+PATH="/home/gedas/go/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # If not running interactively, don't do anything
@@ -63,3 +65,9 @@ alias java18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java'
 # alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 #
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Source gf autcompletion
+source $HOME/go/src/github.com/tomnomnom/gf/gf-completion.bash
+
+export BUGS="$HOME/Documents/bugbounty"
+alias bugs="cd $BUGS"
