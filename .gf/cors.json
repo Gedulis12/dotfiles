@@ -1,5 +1,5 @@
 {
-    "flags": "-HnriE",
+    "flags": "-HnriEa",
     "patterns": [
         "Access-Control-Allow"
     ]

@@ -1,4 +1,4 @@
 {
-    "flags": "-hroiE",
+    "flags": "-hroiEa",
     "pattern": "^\u003c [a-z0-9_\\-]+: .*"
 }

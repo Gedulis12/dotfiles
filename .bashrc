@@ -1,12 +1,16 @@
 # ~/.bashrc
 # set -o vi
 PATH="/home/gedas/.local/bin:$PATH"
+PATH="/home/gedas/downloads/android-studio/android-studio/bin:$PATH"
 PATH="/home/gedas/bin:$PATH"
 PATH="/home/gedas/code/flutter/flutter/bin:$PATH"
 PATH="/home/gedas/downloads/androidstudio/android-studio/bin:$PATH"
 PATH="/home/gedas/Documents/bugbounty/tools/bin:$PATH"
 PATH="/home/gedas/go/bin:$PATH"
+PATH="/home/gedas/Downloads/intellij/idea-IC-231.8109.175/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export MAVEN_HOME="/usr/share/maven"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

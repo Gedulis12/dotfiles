@@ -1,4 +1,4 @@
 {
-    "flags": "-hri",
+    "flags": "-hria",
     "pattern": "server: "
 }

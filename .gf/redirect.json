@@ -1,5 +1,5 @@
 {
-    "flags": "-iE",
+    "flags": "-iErHna",
      "patterns": [
 "(&|[?])callback=",
 "(&|[?])cgi-bin/redirect.cgi",
