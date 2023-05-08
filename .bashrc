@@ -75,3 +75,4 @@ source $HOME/go/src/github.com/tomnomnom/gf/gf-completion.bash
 
 export BUGS="$HOME/Documents/bugbounty"
 alias bugs="cd $BUGS"
+
