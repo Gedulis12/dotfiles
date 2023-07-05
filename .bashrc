@@ -58,15 +58,15 @@ alias java18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java'
 # dotfiles managing alias inspired by https://news.ycombinator.com/item?id=11071754
 #
 # QUICK GUIDE:
-# git init --bare $HOME/.myconf
-# alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
-# config config status.showUntrackedFiles no
+# git init --bare $HOME/.dotfiles
+# alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# dotfiles config status.showUntrackedFiles no
 #
 # WHEN ACCESSING FROM NEW MACHINE:
-# git clone --separate-git-dir=$HOME/.myconf /path/to/repo $HOME/myconf-tmp
-# cp ~/myconf-tmp/.gitmodules ~ If you use Git submodules
-# rm -r ~/myconf-tmp/
-# alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+# git clone --separate-git-dir=$HOME/.dotfiles /path/to/repo $HOME/dotfiles-tmp
+# cp ~/dotfiles-tmp/.gitmodules ~ If you use Git submodules
+# rm -r ~/dotfiles-tmp/
+# alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 #
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -76,3 +76,6 @@ source $HOME/go/src/github.com/tomnomnom/gf/gf-completion.bash
 export BUGS="$HOME/Documents/bugbounty"
 alias bugs="cd $BUGS"
 
+# unlimited bash history
+export HISTSIZE=-1
+export HISTFILESIZE=-1
