@@ -12,6 +12,8 @@ PATH="/home/gedas/.cargo/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export MAVEN_HOME="/usr/share/maven"
+export CODE="$HOME/code"
+. $HOME/bin/code.sh
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
