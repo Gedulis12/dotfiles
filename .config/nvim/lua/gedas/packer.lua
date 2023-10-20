@@ -12,12 +12,18 @@ return require('packer').startup(function(use)
 
 	use({
 --		'rose-pine/neovim',
-        'rebelot/kanagawa.nvim',
+--      'rebelot/kanagawa.nvim',
+--      'wadackel/vim-dogrun',
+        'morhetz/gruvbox',
 --		as = 'rose-pine',
-        as = 'kanagawa',
+--      as = 'kanagawa',
+--      as = 'dogrun',
+        as = 'gruvbox',
 		config = function()
 --			vim.cmd('colorscheme rose-pine')
-			vim.cmd('colorscheme kanagawa')
+--			vim.cmd('colorscheme kanagawa')
+--			vim.cmd('colorscheme dogrun')
+			vim.cmd('colorscheme gruvbox')
 		end
 	})
 
