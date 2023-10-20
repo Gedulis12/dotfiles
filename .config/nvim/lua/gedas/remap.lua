@@ -43,3 +43,6 @@ vim.keymap.set("v", "<Up>", ":echo 'Learn to use HJKL!!!'<CR>")
 vim.keymap.set("v", "<Down>", ":echo 'Learn to use HJKL!!!'<CR>")
 vim.keymap.set("v", "<Left>", ":echo 'Learn to use HJKL!!!'<CR>")
 vim.keymap.set("v", "<Right>", ":echo 'Learn to use HJKL!!!'<CR>")
+
+
+vim.api.nvim_set_keymap('n', '<leader>q', ':lua require("gedas.qftoggle").toggle_qf()<CR>', { noremap = true, silent = true })
