@@ -247,3 +247,5 @@ video/flv=vlc.desktop;
 video/x-flc=vlc.desktop;
 video/x-fli=vlc.desktop;
 video/x-flv=vlc.desktop;
+application/octet-stream=org.gnome.eog.desktop;
+application/x-ms-dos-executable=wine-extension-msp.desktop;
