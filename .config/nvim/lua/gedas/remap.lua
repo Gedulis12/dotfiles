@@ -30,8 +30,11 @@ vim.api.nvim_set_keymap(
   { noremap = true, silent = true }
   )
 
--- quick note shortcut
-vim.keymap.set("n", "<leader>n", ":!quicknote.sh<CR>")
+
+-- run format
+vim.keymap.set("n", "<leader>F", ":Format<CR>")
+vim.keymap.set("v", "<leader>F", ":Format<CR>")
+
 
 -- no arrowkeys
 -- vim.keymap.set("n", "<Up>", "<Nop>")
