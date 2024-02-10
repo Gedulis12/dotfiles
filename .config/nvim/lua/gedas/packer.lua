@@ -65,6 +65,8 @@ return require('packer').startup(function(use)
 
     use('mfussenegger/nvim-lint')
     use('mhartington/formatter.nvim')
+    use {'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
 
     if packer_bootstrap then
 		require("packer").sync()
