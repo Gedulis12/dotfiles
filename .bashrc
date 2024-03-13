@@ -82,3 +82,5 @@ alias bugs="cd $BUGS"
 # unlimited bash history
 export HISTSIZE=-1
 export HISTFILESIZE=-1
+
+source /usr/share/doc/fzf/examples/key-bindings.bash
