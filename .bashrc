@@ -9,11 +9,13 @@ PATH="$HOME/downloads/androidstudio/android-studio/bin:$PATH"
 PATH="$HOME/code/flutter/flutter/bin:$PATH"
 PATH="$HOME/Downloads/intellij/idea-IC-231.8109.175/bin:$PATH"
 PATH="$HOME/Documents/bugbounty/tools/bin:$PATH"
+PATH="$HOME/opt/gf:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export MAVEN_HOME="/usr/share/maven"
 export CODE="$HOME/code"
 . $HOME/bin/code.sh
+export VISUAL=vim
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
