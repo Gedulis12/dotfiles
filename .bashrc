@@ -1,21 +1,26 @@
 # ~/.bashrc
 # set -o vi
-PATH="$HOME/.local/bin:$PATH"
-PATH="$HOME/bin:$PATH"
-PATH="$HOME/go/bin:$PATH"
-PATH="$HOME/.cargo/bin:$PATH"
-PATH="$HOME/downloads/android-studio/android-studio/bin:$PATH"
-PATH="$HOME/downloads/androidstudio/android-studio/bin:$PATH"
-PATH="$HOME/code/flutter/flutter/bin:$PATH"
-PATH="$HOME/Downloads/intellij/idea-IC-231.8109.175/bin:$PATH"
-PATH="$HOME/Documents/bugbounty/tools/bin:$PATH"
-PATH="$HOME/opt/gf:$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:\
+$HOME/.local/bin:\
+$HOME/bin:\
+$HOME/go/bin:\
+$HOME/.cargo/bin:\
+$HOME/downloads/android-studio/android-studio/bin:\
+$HOME/downloads/androidstudio/android-studio/bin:\
+$HOME/code/flutter/flutter/bin:\
+$HOME/Downloads/intellij/idea-IC-231.8109.175/bin:\
+$HOME/Documents/bugbounty/tools/bin:\
+$HOME/opt/gf:\
+$HOME/.yarn/bin:\
+$HOME/.config/yarn/global/node_modules/.bin:\
+/usr/local/go/bin"
+
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export MAVEN_HOME="/usr/share/maven"
 export CODE="$HOME/code"
-. $HOME/bin/code.sh
 export VISUAL=vim
+
+. $HOME/bin/code.sh
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

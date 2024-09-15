@@ -12,7 +12,10 @@ require("formatter").setup {
     -- Formatter configurations for filetype "lua" go here
     -- and will be executed in order
     markdown = {
-      require("formatter.filetypes.markdown").prettier,
+      require("formatter.filetypes.markdown").prettierd,
+    },
+    html = {
+      require("formatter.filetypes.html").htmlbeautifier,
     },
     lua = {
       -- "formatter.filetypes.lua" defines default configurations for the
