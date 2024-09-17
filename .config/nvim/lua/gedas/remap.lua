@@ -52,3 +52,17 @@ vim.api.nvim_set_keymap(
 -- goto errors
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
+
+-- obsidian
+vim.keymap.set("n", "<leader>ot", ":ObsidianTemplate<CR>")
+vim.keymap.set("n", "<leader>on", ":ObsidianNew<CR>")
+vim.keymap.set("n", "<leader>og", ":ObsidianSearch<CR>")
+vim.keymap.set("n", "<leader>of", ":ObsidianQuickSwitch<CR>")
+vim.keymap.set("n", "<leader>ob", ":ObsidianBacklinks<CR>")
+vim.keymap.set("n", "<leader>ol", ":ObsidianLinks<CR>")
+vim.keymap.set("n", "<leader>ocl", ":ObsidianLink<CR>")
+vim.keymap.set("n", "<leader>onl", ":ObsidianLinkNew<CR>")
+vim.keymap.set("n", "<leader>ofl", ":ObsidianFollowLink<CR>")
+vim.keymap.set("n", "<leader>od", ":ObsidianDailies<CR>")
+vim.keymap.set("n", "<leader>oc", ":ObsidianToggleCheckbox<CR>")
+vim.keymap.set("n", "<leader>oi", ":ObsidianTOC<CR>")

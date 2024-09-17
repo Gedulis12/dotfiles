@@ -68,7 +68,12 @@ return require('packer').startup(function(use)
     use {'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }}
 
-    if packer_bootstrap then
-		require("packer").sync()
-	end
-end)
+      use({
+          "epwalsh/obsidian.nvim",
+          tag = "*",  -- recommended, use latest release instead of latest commit
+          requires = { "nvim-lua/plenary.nvim", }})
+
+          if packer_bootstrap then
+              require("packer").sync()
+          end
+      end)

@@ -18,6 +18,8 @@ vim.opt.autoindent = true
 
 vim.opt.termguicolors = true
 
+vim.opt.conceallevel = 2
+
 --" Shift+q to run current line as a shell command and paste stdout in vim
 --noremap Q !!$SHELL<CR>
 
