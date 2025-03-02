@@ -13,12 +13,16 @@ $HOME/Documents/bugbounty/tools/bin:\
 $HOME/opt/gf:\
 $HOME/.yarn/bin:\
 $HOME/.config/yarn/global/node_modules/.bin:\
+$HOME/tmp/flutter/flutter/bin:\
 /usr/local/go/bin"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export MAVEN_HOME="/usr/share/maven"
 export CODE="$HOME/code"
 export VISUAL=vim
+
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONPYCACHEPREFIX=/tmp/pycache
 
 . $HOME/bin/code.sh
 

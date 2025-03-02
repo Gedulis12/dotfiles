@@ -17,6 +17,16 @@ require("formatter").setup {
     html = {
       require("formatter.filetypes.html").htmlbeautifier,
     },
+    python = {
+        --require("formatter.filetypes.python").black,
+      function()
+        return {
+          exe = "black",
+          args = { "--line-length", "80", "-" },
+          stdin = true,
+          }
+      end,
+    },
     lua = {
       -- "formatter.filetypes.lua" defines default configurations for the
       -- "lua" filetype
