@@ -69,6 +69,18 @@ alias vim='nvim'
 alias javac18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/javac'
 alias java18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java'
 
+# Source gf autcompletion
+source $HOME/go/src/github.com/tomnomnom/gf/gf-completion.bash
+
+export BUGS="$HOME/Documents/bugbounty"
+alias bugs="cd $BUGS"
+
+# unlimited bash history
+export HISTSIZE=-1
+export HISTFILESIZE=-1
+
+source /usr/share/doc/fzf/examples/key-bindings.bash
+
 # dotfiles managing alias inspired by https://news.ycombinator.com/item?id=11071754
 #
 # QUICK GUIDE:
@@ -84,14 +96,3 @@ alias java18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java'
 #
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Source gf autcompletion
-source $HOME/go/src/github.com/tomnomnom/gf/gf-completion.bash
-
-export BUGS="$HOME/Documents/bugbounty"
-alias bugs="cd $BUGS"
-
-# unlimited bash history
-export HISTSIZE=-1
-export HISTFILESIZE=-1
-
-source /usr/share/doc/fzf/examples/key-bindings.bash
