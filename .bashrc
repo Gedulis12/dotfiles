@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # ~/.bashrc
 # set -o vi
 export PATH="$PATH:\
@@ -5,20 +6,8 @@ $HOME/.local/bin:\
 $HOME/bin:\
 $HOME/go/bin:\
 $HOME/.cargo/bin:\
-$HOME/downloads/android-studio/android-studio/bin:\
-$HOME/downloads/androidstudio/android-studio/bin:\
-$HOME/code/flutter/flutter/bin:\
-$HOME/Downloads/intellij/idea-IC-231.8109.175/bin:\
-$HOME/Documents/bugbounty/tools/bin:\
-$HOME/opt/gf:\
-$HOME/.yarn/bin:\
-$HOME/.config/yarn/global/node_modules/.bin:\
-$HOME/tmp/flutter/flutter/bin:\
 /usr/local/go/bin"
 
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-export MAVEN_HOME="/usr/share/maven"
-export CODE="$HOME/code"
 export VISUAL=vim
 
 export PYTHONDONTWRITEBYTECODE=1
@@ -37,7 +26,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1='\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 2)\]$(parse_git_branch)\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]'
+export PS1="$(tput bold)$(tput setaf 1)$(tput setaf 3)[%n$(tput setaf 2)@$(tput setaf 4)%m $(tput setaf 5)%~$(tput setaf 1)]$(tput setaf 2)$(parse_git_branch)$(tput setaf 7) $(tput sgr0)"
 
 # Export locales for utf-8 support
 export LC_ALL=en_US.UTF-8
@@ -65,10 +54,6 @@ alias ls='ls --color=auto'
 alias v='nvim'
 alias vim='nvim'
 
-# java aliases
-alias javac18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/javac'
-alias java18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java'
-
 # dotfiles managing alias inspired by https://news.ycombinator.com/item?id=11071754
 #
 # QUICK GUIDE:
@@ -84,14 +69,8 @@ alias java18='/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java'
 #
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Source gf autcompletion
-source $HOME/go/src/github.com/tomnomnom/gf/gf-completion.bash
-
-export BUGS="$HOME/Documents/bugbounty"
-alias bugs="cd $BUGS"
-
 # unlimited bash history
 export HISTSIZE=-1
 export HISTFILESIZE=-1
 
-source /usr/share/doc/fzf/examples/key-bindings.bash
+#source /usr/share/doc/fzf/examples/key-bindings.bash

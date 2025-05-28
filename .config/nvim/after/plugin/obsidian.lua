@@ -5,7 +5,7 @@ obsidian.setup({
     workspaces = {
         {
             name = "notes",
-            path = "~/Documents/notes",
+            path = "/Users/grepecka/Google Drive/My Drive/Notes",
         },
     },
 
