@@ -14,6 +14,7 @@ $HOME/opt/gf:\
 $HOME/.yarn/bin:\
 $HOME/.config/yarn/global/node_modules/.bin:\
 $HOME/tmp/flutter/flutter/bin:\
+/usr/local/bin:\
 /usr/local/go/bin"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
@@ -96,3 +97,7 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 #
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
