@@ -1,5 +1,8 @@
 local lsp = require('lsp-zero')
--- lsp.preset('recommended')
+
+lsp.on_attach(function(client, bufnr)
+  lsp.default_keymaps({buffer = bufnr})
+end)
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
