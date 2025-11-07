@@ -476,12 +476,12 @@ require("lazy").setup({
 					-- `friendly-snippets` contains a variety of premade snippets.
 					--    See the README about individual language/framework/plugin snippets:
 					--    https://github.com/rafamadriz/friendly-snippets
-					 {
-					   'rafamadriz/friendly-snippets',
-					   config = function()
-					     require('luasnip.loaders.from_vscode').lazy_load()
-					   end,
-					 },
+					{
+						"rafamadriz/friendly-snippets",
+						config = function()
+							require("luasnip.loaders.from_vscode").lazy_load()
+						end,
+					},
 				},
 				opts = {},
 			},
@@ -551,5 +551,55 @@ require("lazy").setup({
 			-- Shows a signature help window while you type arguments for a function
 			signature = { enabled = true },
 		},
+	},
+	-- obsidian
+	{
+		"epwalsh/obsidian.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("obsidian").setup({
+
+				workspaces = {
+					{
+						name = "notes",
+						path = "~/Documents/notes",
+					},
+				},
+				daily_notes = {
+					folder = "daily",
+					date_format = "%Y-%m-%d",
+					default_tags = { "daily-notes" },
+				},
+
+				mappings = {},
+
+				new_notes_location = "notes_subdir",
+				templates = {
+					folder = "templates",
+					date_format = "%Y-%m-%d",
+					time_format = "%H:%M",
+					substitutions = {
+						yesterday = function()
+							return os.date("%Y-%m-%d", os.time() - 86400)
+						end,
+						tomorrow = function()
+							return os.date("%Y-%m-%d", os.time() + 86400)
+						end,
+					},
+				},
+			})
+			vim.keymap.set("n", "<leader>ot", ":ObsidianTemplate<CR>")
+			vim.keymap.set("n", "<leader>on", ":ObsidianNew<CR>")
+			vim.keymap.set("n", "<leader>og", ":ObsidianSearch<CR>")
+			vim.keymap.set("n", "<leader>of", ":ObsidianQuickSwitch<CR>")
+			vim.keymap.set("n", "<leader>ob", ":ObsidianBacklinks<CR>")
+			vim.keymap.set("n", "<leader>ol", ":ObsidianLinks<CR>")
+			vim.keymap.set("n", "<leader>ocl", ":ObsidianLink<CR>")
+			vim.keymap.set("n", "<leader>onl", ":ObsidianLinkNew<CR>")
+			vim.keymap.set("n", "<leader>ofl", ":ObsidianFollowLink<CR>")
+			vim.keymap.set("n", "<leader>od", ":ObsidianDailies<CR>")
+			vim.keymap.set("n", "<leader>oc", ":ObsidianToggleCheckbox<CR>")
+			vim.keymap.set("n", "<leader>oi", ":ObsidianTOC<CR>")
+		end,
 	},
 })
