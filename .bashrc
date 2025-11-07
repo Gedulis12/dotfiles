@@ -10,10 +10,12 @@ $HOME/downloads/androidstudio/android-studio/bin:\
 $HOME/code/flutter/flutter/bin:\
 $HOME/Downloads/intellij/idea-IC-231.8109.175/bin:\
 $HOME/Documents/bugbounty/tools/bin:\
+$HOME/opt/:\
 $HOME/opt/gf:\
 $HOME/.yarn/bin:\
 $HOME/.config/yarn/global/node_modules/.bin:\
 $HOME/tmp/flutter/flutter/bin:\
+$HOME/.krew/bin:\
 /usr/local/bin:\
 /usr/local/go/bin"
 
@@ -101,3 +103,5 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias k='kubectl'
