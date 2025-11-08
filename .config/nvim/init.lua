@@ -602,4 +602,10 @@ require("lazy").setup({
 			vim.keymap.set("n", "<leader>oi", ":ObsidianTOC<CR>")
 		end,
 	},
+    -- lualine
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = { theme = 'rose-pine' },
+    },
 })
